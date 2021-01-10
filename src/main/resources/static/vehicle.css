@@ -1,0 +1,17 @@
+body {
+    background-color: linen;
+}
+
+table, thead {
+    border: 1px solid black;
+    width: 60%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+#available-checkbox-th {
+    text-align: right;
+}

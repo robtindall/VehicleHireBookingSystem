@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>List of Vehicle</title>
+        <meta name="description" content="The HTML5 Herald">
+    </head>
+    <body>
+
+        <section>
+            <h2>Period of hire</h2>
+            <label for="from-date">From:</label>
+            <input type="date" id="from-date" /><br>
+            <label for="to-date">To:</label>
+            <input type="date" id="to-date" />
+        </section>
+
+        <hr>
+
+        <section>
+            <table>
+                <caption>Vehicles currently available for hire</caption>
+                <thead>
+                    <tr>
+                        <th>
+                            Registration Number
+                        </th>
+                        <th>
+                            Category
+                        </th>
+                        <th>
+                            Make
+                        </th>
+                        <th>
+                            Model
+                        </th>
+                        <th>
+                            Fuel type
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" onclick="alert('The cost of hiring a Ford Transit (PXG600S) from 01/01/2021 to 10/02/2021 will be £500.00')">PXG600S</a>
+                        </td>
+                        <td>
+                            Van
+                        </td>
+                        <td>
+                            Ford
+                        </td>
+                        <td>
+                            Transit
+                        </td>
+                        <td>
+                            Diesel
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">CC034T</a>
+                        </td>
+                        <td>
+                            Small car
+                        </td>
+                        <td>
+                            Ford
+                        </td>
+                        <td>
+                            Kia
+                        </td>
+                        <td>
+                            Petrol
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">HIT55500</a>
+                        </td>
+                        <td>
+                            Estate
+                        </td>
+                        <td>
+                            Nissan
+                        </td>
+                        <td>
+                            Bluebird
+                        </td>
+                        <td>
+                            Petrol
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">DWT600S</a>
+                        </td>
+                        <td>
+                            Small
+                        </td>
+                        <td>
+                            Mini
+                        </td>
+                        <td>
+                            Cooper
+                        </td>
+                        <td>
+                            Petrol
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <input type="checkbox" id="available-checkbox">
+                            <label for="available-checkbox">Show vehicles already hired</label>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vehicle Hire Booking System</title>
+        <link rel="stylesheet" href="vehicle.css">
+    </head>
+    <body>
+        <div id="app">
+            <h2>Vehicles currently available for hire</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="available-checkbox-th" colspan="7">
+                            <input v-on:change="fetch" type="checkbox" id="available-checkbox">
+                            <label for="available-checkbox">Show vehicles already hired</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Registration Number</th>
+                        <th>Category</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Fuel type</th>
+                        <th>Hired By</th>
+                        <th>Until</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="vehicle in vehicles">
+                        <td>
+                            <a href="#" v-on:click="getCostOfHire" :id="vehicle.id">
+                                {{ vehicle.registration_number }}
+                            </a>
+                        </td>
+                        <td>{{ vehicle.category }}</td>
+                        <td>{{ vehicle.make }}</td>
+                        <td>{{ vehicle.model }}</td>
+                        <td>{{ vehicle.fuel }}</td>
+                        <td>{{ vehicle.hired_by_customer }}</td>
+                        <td>{{ vehicle.hire_end_date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Period of hire</h2>
+            <label for="from-date">From:</label>
+            <input type="date" id="from-date" v-model="fromDate"/>
+            <label for="to-date">To:</label>
+            <input type="date" id="to-date" v-model="toDate"/>
+        </div>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="vehicle.js"></script>
+    </body>
+</html>
